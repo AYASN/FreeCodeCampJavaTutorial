@@ -4,6 +4,7 @@ import com.assir.yassine.lesson3.Name;
 
 public class Person {
 
+    private static int personCounter;
     private Name personName;
 
     public Person(Name personName) {
@@ -11,6 +12,8 @@ public class Person {
     }
 
     public Person() {
+        personCounter++;
+
         /*
         empty on purpose - default constructor
          */
@@ -26,5 +29,9 @@ public class Person {
 
     public String hello(String name) {
         return "Hello " + name;
+    }
+
+    public int numberOfPersons() {
+        return personCounter;
     }
 }

@@ -19,4 +19,14 @@ public class PersonTest {
         Person person = new Person();
         assertEquals("Hello Developer", person.hello("Developer"));
     }
+
+    @Test
+    public void shouldReturnNumberOfPersons() {
+        Person person1 = new Person();
+        Person person2 = new Person();
+        Person myPerson = new Person();
+        Person person4 = new Person();
+
+        assertEquals(4, myPerson.numberOfPersons());
+    }
 }
