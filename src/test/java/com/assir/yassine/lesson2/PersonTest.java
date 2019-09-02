@@ -29,4 +29,23 @@ public class PersonTest {
 
         assertEquals(4, myPerson.numberOfPersons());
     }
+
+    @Test
+    public void demonstrateBoolean() {
+
+        int i = 4;
+        int j = 3;
+        boolean areEqual = i == j;
+
+        if (i > j) {
+            System.out.println("greater !");
+        } else if (j > i) {
+            System.out.println("smaller !");
+        } else if (areEqual) {
+            System.out.println("equal !");
+        } else {
+            System.out.println("result not known !");
+        }
+
+    }
 }
