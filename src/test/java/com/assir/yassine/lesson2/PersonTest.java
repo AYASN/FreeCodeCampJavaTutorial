@@ -23,11 +23,13 @@ public class PersonTest {
     @Test
     public void shouldReturnNumberOfPersons() {
 
+        int i = 0;
         Person person1;
-        for (int i = 0; i < 4; i++) {
-            person1 = new Person();
-        }
 
+        while (i < 4) {
+            person1 = new Person();
+            i++;
+        }
         assertEquals(4, Person.numberOfPersons());
     }
 
