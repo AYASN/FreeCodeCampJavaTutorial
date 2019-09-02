@@ -22,12 +22,13 @@ public class PersonTest {
 
     @Test
     public void shouldReturnNumberOfPersons() {
-        Person person1 = new Person();
-        Person person2 = new Person();
-        Person myPerson = new Person();
-        Person person4 = new Person();
 
-        assertEquals(4, myPerson.numberOfPersons());
+        Person person1;
+        for (int i = 0; i < 4; i++) {
+            person1 = new Person();
+        }
+
+        assertEquals(4, Person.numberOfPersons());
     }
 
     @Test

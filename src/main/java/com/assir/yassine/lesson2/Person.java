@@ -31,7 +31,7 @@ public class Person {
         return "Hello " + name;
     }
 
-    public int numberOfPersons() {
+    public static int numberOfPersons() {
         return personCounter;
     }
 }
