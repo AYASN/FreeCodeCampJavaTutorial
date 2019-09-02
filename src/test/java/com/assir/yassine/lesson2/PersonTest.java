@@ -26,11 +26,12 @@ public class PersonTest {
         int i = 0;
         Person person1;
 
-        while (i < 4) {
+        do {
             person1 = new Person();
             i++;
-        }
-        assertEquals(4, Person.numberOfPersons());
+        } while (i < 4);
+
+        assertEquals(4, person1.numberOfPersons());
     }
 
     @Test
